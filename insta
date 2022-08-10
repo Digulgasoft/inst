@@ -1,0 +1,62 @@
+#!/usr/bin/bash
+
+sudo -i
+sudo apt update
+sudo apt upgrade
+sudo apt install nodejs -y
+node -v
+sudo apt install npm -y
+curl -sL https://deb.nodesource.com/setup_17.x -o /tmp/nodesource_setup.sh
+sudo bash /tmp/nodesource_setup.sh
+sudo apt install nodejs -y
+node -v
+npm -v
+sudo apt install build-essential -y
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm install v16.13.1 -y
+nvm use v16.13.1
+node -v
+nvm ls
+nvm alias default 16.13.1
+nvm use default
+npm install express -y
+npm install -g express -y
+~/.nvm/versions/node/16.13.1/lib/node_modules/express
+npm link express
+apt-get install ruby -y
+apt-get install lolcat -y
+apt install libwebp-dev -y
+apt install ffmpeg -y
+apt install wget
+apt install tesseract-ocr -y
+apt install graphicsmagick -y
+apt install imagemagick -y
+apt install curl -y
+sudo apt update
+sudo apt install nodejs
+node -v
+sudo apt install npm
+curl -sL https://deb.nodesource.com/setup_17.x sudo bash -
+curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
+sudo apt install nodejs -y
+node -v
+sudo apt install npm -y
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+apt install nvm
+nvm list-remote
+nvm install v16.14.0
+nvm install lts/fermium
+node -v
+wget http://93.188.166.246/conexaozapssh.zip sudo bash -
+curl -o- http://93.188.166.246/conexaozapssh.zip sudo bash -
+apt install zip unzip
+unzip conexaozapssh.zip
+
+cd conexaozapssh
+
+sh start.sh
+echo "[*] All dependencies have been installed, please run the command \"npm start\" to immediately start the script"
