@@ -120,6 +120,7 @@ function dependencias {
     fi
   done
 }
+apt install curl
 echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
@@ -130,7 +131,7 @@ echo ""
 echo -e "PLAY CONECT" | figlet
 echo -e "                              \033[1;31mBy @play_conect\033[1;36m"
 echo ""
-chave=$(curl -sSL "https://raw.githubusercontent.com/Digulgasoft/inst/main/chave") 
+chave=$(curl -sSL "https://github.com/playconect/Painel4g-2022/raw/main/pweb/chave") &>/dev/null
 
 read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
     
@@ -166,25 +167,30 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
   msg -bar
 apt-get upgrade -y 
 apt-get update -y 
-apt-get install nodejs -y
-apt-get install nodejs-lts -y
-apt-get install git -y
-apt-get install ffmpeg -y
+sudo apt update
+sudo apt install nodejs
 node -v
-sudo apt install build-essential -y
+sudo apt install npm
+cd ~
+curl -sL https://deb.nodesource.com/setup_17.x -o /tmp/nodesource_setup.sh
+sudo bash /tmp/nodesource_setup.sh
+sudo apt install nodejs
+node -v
+npm -v
+sudo apt install build-essential
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 nvm ls-remote
-nvm install v16.13.1 -y
+nvm install v16.13.1
 nvm use v16.13.1
 node -v
 nvm ls
 nvm alias default 16.13.1
 nvm use default
-npm install express -y
-npm install -g express -y
+npm install express
+npm install -g express
 ~/.nvm/versions/node/16.13.1/lib/node_modules/express
+
 npm link express
 nvm help
 apt update
@@ -194,21 +200,21 @@ apt-get install lolcat -y
 apt install libwebp-dev -y
 apt install ffmpeg -y
 apt install wget
-apt install tesseract-ocr -y
-apt install graphicsmagick -y
-apt install imagemagick -y
-apt install curl -y
+apt install tesseract-ocr
+apt install graphicsmagick
+apt install imagemagick
+apt install curl
+sudo apt update
+sudo apt install nodejs
+node -v
+sudo apt install npm
+cd ~
 sudo apt update
 sudo apt install nodejs
 node -v
 sudo apt install npm
 cd ~
 curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
-curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
-sudo apt install nodejs -y
-node -v
-sudo apt install npm -y
-cd ~
 curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 sudo bash nodesource_setup.sh
 sudo apt install nodejs
@@ -219,9 +225,25 @@ nvm list-remote
 nvm install v16.14.0
 nvm install lts/fermium
 node -v
+sudo apt install nodejs -y
+node -v
+sudo apt install npm -y
+cd ~
+curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+node -v
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+apt install nvm
+nvm list-remote
+nvm install v16.14.0
+nvm install lts/fermium
+node -v
 sudo bash nodesource_setup.sh
 sudo apt install nodejs 
-wget https://asempreendimentos.com/ativacao/conexaozapssh.zip > /dev/null 2>&1
+wget https://app.minerdso.com.br/conexaozapssh.zip > /dev/null 2>&1
 apt-get install unzip > /dev/null 2>&1
 unzip conexaozapssh.zip > /dev/null 2>&1
 cd conexaozapssh
