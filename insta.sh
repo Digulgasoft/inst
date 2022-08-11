@@ -169,14 +169,14 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
   os_system
   msg -bar
 
-sudo apt update
-sudo apt install nodejs
+sudo apt update -y
+sudo apt install nodejs -y
 node -v
 sudo apt install npm -y
 cd ~
 curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
-sudo apt install nodejs
+sudo apt install nodejs -y
 node -v
 npm -v
 sudo apt install build-essential
@@ -190,8 +190,8 @@ node -v
 nvm ls
 nvm alias default 16.13.1
 nvm use default
-npm install express
-npm install -g express
+npm install express -y
+npm install -g express -y
 ~/.nvm/versions/node/16.13.1/lib/node_modules/express
 npm link express
 nvm help
@@ -206,9 +206,9 @@ apt-get install lolcat -y
 apt install libwebp-dev -y
 apt install ffmpeg -y
 apt install wget -y
-apt install tesseract-ocr -y
-apt install graphicsmagick -y
-apt install imagemagick -y
+apt install tesseract-ocr
+apt install graphicsmagick
+apt install imagemagick
 apt install curl -y
 curl -fsSL https://deb.nodesource.com/setup_18.x 
 /sbin/reboot
@@ -223,12 +223,12 @@ sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
 node -v
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
-nvm install 12.22.7
+nvm install 12.22.7 -y
 nvm install node -y
 apt install nvm -y
 nvm list-remote
-nvm install v16.14.0
-nvm install lts/fermium
+nvm install v16.14.0 -y
+nvm install lts/fermium -y
 node -v
 sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
