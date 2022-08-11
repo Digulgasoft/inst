@@ -130,7 +130,7 @@ echo ""
 echo -e "PLAY CONECT" | figlet
 echo -e "                              \033[1;31mBy @play_conect\033[1;36m"
 echo ""
-chave=$(curl -sSL "https://github.com/playconect/Painel4g-2022/raw/main/pweb/chave") 
+chave=$(curl -sSL "https://raw.githubusercontent.com/Digulgasoft/inst/main/chave") 
 
 read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
     
