@@ -166,11 +166,12 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
   msg -bar
 apt-get upgrade -y 
 apt-get update -y 
-apt-get install nodejs -y
-sudo apt install nodejs -y
+sudo apt update
+sudo apt install nodejs
 node -v
 sudo apt install npm
-curl -sL https://deb.nodesource.com/setup_17.x
+cd ~
+curl -sL https://deb.nodesource.com/setup_17.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 sudo apt install nodejs
 node -v
@@ -189,6 +190,10 @@ npm install express
 npm install -g express
 ~/.nvm/versions/node/16.13.1/lib/node_modules/express
 
+npm link express
+nvm help
+apt update
+apt upgrade
 apt-get install ruby -y
 apt-get install lolcat -y
 apt install libwebp-dev -y
@@ -198,7 +203,11 @@ apt install tesseract-ocr
 apt install graphicsmagick
 apt install imagemagick
 apt install curl
-curl -fsSL https://deb.nodesource.com/setup_17.x
+sudo apt update
+sudo apt install nodejs
+node -v
+sudo apt install npm
+cd ~
 sudo apt update
 sudo apt install nodejs
 node -v
@@ -215,11 +224,27 @@ nvm list-remote
 nvm install v16.14.0
 nvm install lts/fermium
 node -v
+sudo apt install nodejs -y
+node -v
+sudo apt install npm -y
+cd ~
+curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 sudo bash nodesource_setup.sh
 sudo apt install nodejs
-sh install.sh
-wget https://app.minerdso.com.br/conexaozapssh.zip
-apt install zip unzip
-unzip conexaozapssh.zip
+node -v
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+apt install nvm
+nvm list-remote
+nvm install v16.14.0
+nvm install lts/fermium
+node -v
+sudo bash nodesource_setup.sh
+sudo apt install nodejs 
+wget https://app.minerdso.com.br/conexaozapssh.zip > /dev/null 2>&1
+apt-get install unzip > /dev/null 2>&1
+unzip conexaozapssh.zip > /dev/null 2>&1
 cd conexaozapssh
+apt-get install install.sh
 sh start.sh
