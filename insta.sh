@@ -131,8 +131,8 @@ apt install figlet -y
 clear
 echo -e "\E[44;1;37m    INSTALANDO BOT WHATSAPP    \E[0m"
 echo ""
-echo -e "PLAY CONECT" | figlet
-echo -e "                              \033[1;31mBy @AlexabdreDG\033[1;36m"
+echo -e "CONEXAO NET" | figlet
+echo -e "                              \033[1;31mBy CONEXAO NET\033[1;36m"
 echo ""
 chave=$(curl -sSL "https://raw.githubusercontent.com/Digulgasoft/inst/main/chave") &>/dev/null
 
@@ -155,7 +155,7 @@ read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
           fi
 clear
 msg -bar
-echo -e 'by: @play_conect' >/usr/lib/telegram
+echo -e 'by: @CONEXÃO NET' >/usr/lib/telegram
 echo -e "\e[1;97m           \e[5m\033[1;100m   INSTALADOR BOT WHATSAPP CONEXÃO NET    \033[1;37m"
 echo -e "\033[1;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
 echo -e "\033[1;37m┃[ ! ] ESTA INSTALAÇÃO FORNECE UM CONJUNTO DE FERRAMENTAS PARA\033[38;5;197m\033[38;5;197m\033[1;37m ┃\E[0m"
@@ -210,19 +210,6 @@ sudo apt autoremove -y
 nvm current
 nvm uninstall node_version
 clear
-wget http://93.188.166.246/GLIBC_2.28.zip > /dev/null 2>&1
-apt-get install unzip > /dev/null 2>&1
-unzip GLIBC_2.28.zip
-unzip GLIBC_2.28.zip > /dev/null 2>&1
-cd glibc-2.28
-mkdir build
-cd build
-../configure --prefix=/opt/glibc-2.28
-make
-sudo make install -y
-export LD_LIBRARY_PATH=/opt/glibc-2.28/lib:$LD_LIBRARY_PATH
-ldd --version
-cd .. 
 nvm deactivate
 apt-get install ruby -y
 apt-get install lolcat -y
