@@ -168,22 +168,35 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
   clear && clear
   os_system
   msg -bar
-apt-get upgrade -y 
-apt-get update -y 
-sudo apt install nodejs -y
-node -v
-sudo apt install npm -y
-cd ~
-clear
-curl -sL https://deb.nodesource.com/setup_17.x -o /tmp/nodesource_setup.sh
+
+
+curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 clear
 node -v
 npm -v
 sudo apt install build-essential -y
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+apt install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 clear
+nvm ls
+nvm install v16.15.1
+nvm install v18.3.0
+nvm install v14.19.2
+nvm alias default v16.15.1
+nvm alias default v18.3.0
+nvm alias default v14.19.2
+nvm use v18.3.0
+nvm use v14.19.2
+nvm use v16.15.1
+nvm reinstall-packages v16.14.2
+nvm ls
+npm ls -g --depth=0.
+npm outdated -g --depth=0.
+npm update -g
+npm rebuild
 nvm ls-remote
 nvm install v16.13.1 -y
 clear
@@ -202,7 +215,6 @@ apt update
 apt upgrade
 clear
 apt install git -y
-git clone git://github.com/creationix/nvm.git ~/.nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc
