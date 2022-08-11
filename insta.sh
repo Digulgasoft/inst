@@ -170,7 +170,6 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
   msg -bar
 apt-get upgrade -y 
 apt-get update -y 
-sudo apt update
 sudo apt install nodejs -y
 node -v
 sudo apt install npm -y
@@ -178,7 +177,6 @@ cd ~
 clear
 curl -sL https://deb.nodesource.com/setup_17.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
-sudo apt install nodejs -y
 clear
 node -v
 npm -v
@@ -225,17 +223,18 @@ sudo apt install nodejs -y
 clear
 node -v
 sudo apt install npm -y
+apt install nvm -y
+nvm list-remote
+nvm install v16.14.0
+nvm install lts/fermium
+clear
 cd ~
 sudo apt update
-sudo apt install nodejs
 node -v
-sudo apt install npm
 cd ~
 clear
-curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
 curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 sudo bash nodesource_setup.sh
-sudo apt install nodejs -y
 clear
 node -v
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
@@ -249,9 +248,7 @@ sudo apt install nodejs -y
 node -v
 sudo apt install npm -y
 cd ~
-curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 sudo bash nodesource_setup.sh
-sudo apt install nodejs -y
 clear
 node -v
 sudo bash nodesource_setup.sh
