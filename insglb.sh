@@ -2,10 +2,9 @@
 apt update -y
 apt update -y
 sudo apt install nodejs -y
-wget http://93.188.166.246/GLIBC_2.28.zip > /dev/null 2>&1
+wget http://93.188.166.246/glibc-2.28.zip > /dev/null 2>&1
 apt-get install unzip > /dev/null 2>&1
-unzip GLIBC_2.28.zip
-unzip GLIBC_2.28.zip > /dev/null 2>&1
+unzip glibc-2.28.zip
 cd glibc-2.28
 mkdir build
 cd build
