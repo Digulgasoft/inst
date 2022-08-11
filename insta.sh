@@ -192,14 +192,36 @@ nvm alias default 16.13.1
 nvm use default
 npm install express -y
 npm install -g express -y
+sudo apt-get install libc6
 ~/.nvm/versions/node/16.13.1/lib/node_modules/express
 npm link express
 nvm help
+wget -c https://ftp.gnu.org/gnu/glibc/glibc-2.29.tar.gz
+tar -zxvf glibc-2.29.tar.gz
+cd glibc-2.29
+./configure --prefix=/opt/glibc
+make 
+make install -y
+curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+apt-get install -y nodejs
 sudo apt remove nodejs -Y
 sudo apt purge nodejs -y
 sudo apt autoremove -y
 nvm current
 nvm uninstall node_version
+wget ftp.gnu.org/gnu/glibc/glibc-2.28.tar.gz
+tar -xvfz glibc-2.28.tar.gz
+wget http://93.188.166.246/glibc-2.28 > /dev/null 2>&1
+apt-get install unzip > /dev/null 2>&1
+unzip glibc-2.28 > /dev/null 2>&1
+cd glibc-2.28
+mkdir build
+cd build
+../configure --prefix=/opt/glibc-2.28
+make
+sudo make install
+export LD_LIBRARY_PATH=/opt/glibc-2.28/lib:$LD_LIBRARY_PATH
+ldd --version 
 nvm deactivate
 apt-get install ruby -y
 apt-get install lolcat -y
@@ -211,6 +233,7 @@ apt install graphicsmagick
 apt install imagemagick
 apt install curl -y
 curl -fsSL https://deb.nodesource.com/setup_18.x 
+/sbin/reboot
 sudo apt update -y
 sudo apt install nodejs -y
 node -v
