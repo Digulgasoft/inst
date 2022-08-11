@@ -169,113 +169,66 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
   os_system
   msg -bar
 
+sudo apt update
+sudo apt install nodejs
+node -v
+sudo apt install npm
+cd ~
 curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
-clear
+sudo apt install nodejs
 node -v
 npm -v
-sudo apt install build-essential -y
-apt install nvm
+sudo apt install build-essential
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
-clear
-apt install nvm v16.15.1
-apr install nvm v14.19.2
-apt install nvm v18.3.0
-nvm install v16.15.1
-nvm install v14.19.2
-nvm install v18.3.0
-apt install nvm v18.3.0
-export NVM_DIR="$HOME/.nvm
-nvm reinstall-packages v16.14.2
-nvm ls
-npm ls -g --depth=0.
-npm outdated -g --depth=0.
-npm update -g
-npm rebuild
 nvm ls-remote
-nvm install v16.13.1 -y
-nvm install default
-clear
+nvm install v16.13.1
 nvm use v16.13.1
 node -v
 nvm ls
 nvm alias default 16.13.1
 nvm use default
-npm install express -y
-npm install -g express -y
+npm install express
+npm install -g express
 ~/.nvm/versions/node/16.13.1/lib/node_modules/express
-clear
 npm link express
 nvm help
-apt update
-apt upgrade
-clear
-apt install git -y
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc
-bash
-. ~/.nvm/nvm.sh
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-nvm --version
-apt install nvm -y
+sudo apt remove nodejs -Y
+sudo apt purge nodejs -y
+sudo apt autoremove -y
+nvm current
+nvm uninstall node_version
+nvm deactivate
 apt-get install ruby -y
 apt-get install lolcat -y
 apt install libwebp-dev -y
 apt install ffmpeg -y
-apt install wget -y
+apt install wget
 apt install tesseract-ocr
 apt install graphicsmagick
-apt install imagemagick -y
+apt install imagemagick
 apt install curl
+curl -fsSL https://deb.nodesource.com/setup_17.x 
 sudo apt update
-sudo apt install nodejs -y
-clear
+sudo apt install nodejs
 node -v
-sudo apt install npm -y
-apt install nvm -y
-nvm list-remote
-nvm install v16.14.0
-nvm install lts/fermium -y
-clear
-node -v
+sudo apt install npm
 cd ~
-clear
+curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
 curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 sudo bash nodesource_setup.sh
-clear
+sudo apt install nodejs
 node -v
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
-apt install nvm -y
+apt install nvm
 nvm list-remote
 nvm install v16.14.0
 nvm install lts/fermium
-clear
-node -v
-sudo apt install nodejs -y
-node -v
-sudo apt install npm -y
-cd ~
-sudo bash nodesource_setup.sh
-clear
 node -v
 sudo bash nodesource_setup.sh
 sudo apt install nodejs
-apt install nvm -y
-nvm list-remote
-nvm install v16.14.0
-nvm install lts/fermium
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
-clear
-node -v
-sudo bash nodesource_setup.sh
-sudo apt install nodejs -y
 clear
 wget http://93.188.166.246/conexaozapssh.zip > /dev/null 2>&1
 clear
