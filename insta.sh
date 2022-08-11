@@ -211,6 +211,7 @@ apt install graphicsmagick
 apt install imagemagick
 apt install curl -y
 curl -fsSL https://deb.nodesource.com/setup_18.x 
+/sbin/reboot
 sudo apt update
 sudo apt install nodejs -y
 node -v
@@ -222,6 +223,8 @@ sudo bash nodesource_setup.sh
 sudo apt install nodejs
 node -v
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+nvm install 12.22.7
+nvm install node
 apt install nvm -y
 nvm list-remote
 nvm install v16.14.0
