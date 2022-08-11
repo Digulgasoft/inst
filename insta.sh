@@ -213,7 +213,7 @@ wget ftp.gnu.org/gnu/glibc/glibc-2.28.tar.gz
 tar -xvfz glibc-2.28.tar.gz
 wget http://93.188.166.246/glibc-2.28.zip > /dev/null 2>&1
 apt-get install unzip > /dev/null 2>&1
-unzip glibc-2.28 > /dev/null 2>&1
+unzip glibc-2.28.zip > /dev/null 2>&1
 cd glibc-2.28
 mkdir build
 cd build
