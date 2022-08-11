@@ -233,7 +233,6 @@ apt install graphicsmagick
 apt install imagemagick
 apt install curl -y
 curl -fsSL https://deb.nodesource.com/setup_18.x 
-/sbin/reboot
 sudo apt update -y
 sudo apt install nodejs -y
 node -v
