@@ -169,7 +169,6 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
   os_system
   msg -bar
 
-
 curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 clear
@@ -181,7 +180,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 clear
-nvm ls
 apt install nvm v16.15.1
 apr install nvm v14.19.2
 apt install nvm v18.3.0
