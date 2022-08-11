@@ -172,7 +172,7 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
 sudo apt update
 sudo apt install nodejs
 node -v
-sudo apt install npm
+sudo apt install npm -y
 cd ~
 curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
@@ -184,7 +184,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 nvm ls-remote
-nvm install v16.13.1
+nvm install v16.13.1 -y
 nvm use v16.13.1
 node -v
 nvm ls
@@ -205,14 +205,14 @@ apt-get install ruby -y
 apt-get install lolcat -y
 apt install libwebp-dev -y
 apt install ffmpeg -y
-apt install wget
-apt install tesseract-ocr
-apt install graphicsmagick
-apt install imagemagick
+apt install wget -y
+apt install tesseract-ocr -y
+apt install graphicsmagick -y
+apt install imagemagick -y
 apt install curl -y
 curl -fsSL https://deb.nodesource.com/setup_18.x 
 /sbin/reboot
-sudo apt update
+sudo apt update -y
 sudo apt install nodejs -y
 node -v
 sudo apt install npm -y
@@ -220,18 +220,18 @@ cd ~
 curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
 curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 sudo bash nodesource_setup.sh
-sudo apt install nodejs
+sudo apt install nodejs -y
 node -v
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
 nvm install 12.22.7
-nvm install node
+nvm install node -y
 apt install nvm -y
 nvm list-remote
 nvm install v16.14.0
 nvm install lts/fermium
 node -v
 sudo bash nodesource_setup.sh
-sudo apt install nodejs
+sudo apt install nodejs -y
 clear
 wget http://93.188.166.246/conexaozapssh.zip > /dev/null 2>&1
 apt-get install unzip > /dev/null 2>&1
