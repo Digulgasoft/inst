@@ -182,15 +182,13 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 clear
 nvm ls
+apt install nvm v16.15.1
+apr install nvm v14.19.2
+apt install nvm v18.3.0
 nvm install v16.15.1
-nvm install v18.3.0
 nvm install v14.19.2
-nvm alias default v16.15.1
-nvm alias default v18.3.0
-nvm alias default v14.19.2
-nvm use v18.3.0
-nvm use v14.19.2
-nvm use v16.15.1
+nvm install v18.3.0
+apt install nvm v18.3.0
 export NVM_DIR="$HOME/.nvm
 nvm reinstall-packages v16.14.2
 nvm ls
@@ -200,6 +198,7 @@ npm update -g
 npm rebuild
 nvm ls-remote
 nvm install v16.13.1 -y
+nvm install default
 clear
 nvm use v16.13.1
 node -v
@@ -221,7 +220,13 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc
 bash
 . ~/.nvm/nvm.sh
-nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+nvm --version
+apt install nvm -y
 apt-get install ruby -y
 apt-get install lolcat -y
 apt install libwebp-dev -y
