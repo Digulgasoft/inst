@@ -1,6 +1,7 @@
 #!/bin/bash
 
 apt install curl -Y
+clear
 function msg {
   BRAN='\033[1;37m' && RED='\e[31m' && GREEN='\e[32m' && YELLOW='\e[33m'
   BLUE='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' && BLACK='\e[1m' && SEMCOR='\e[0m'
@@ -122,7 +123,7 @@ function dependencias {
     fi
   done
 }
-apt install curl
+apt install curl -y
 echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
@@ -170,33 +171,46 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
 apt-get upgrade -y 
 apt-get update -y 
 sudo apt update
-sudo apt install nodejs
+sudo apt install nodejs -y
 node -v
-sudo apt install npm
+sudo apt install npm -y
 cd ~
+clear
 curl -sL https://deb.nodesource.com/setup_17.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
-sudo apt install nodejs
+sudo apt install nodejs -y
+clear
 node -v
 npm -v
-sudo apt install build-essential
+sudo apt install build-essential -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
 source ~/.bashrc
+clear
 nvm ls-remote
-nvm install v16.13.1
+nvm install v16.13.1 -y
+clear
 nvm use v16.13.1
 node -v
 nvm ls
 nvm alias default 16.13.1
 nvm use default
-npm install express
+npm install express -y
 npm install -g express
 ~/.nvm/versions/node/16.13.1/lib/node_modules/express
-
+clear
 npm link express
 nvm help
 apt update
 apt upgrade
+clear
+apt install git -y
+git clone git://github.com/creationix/nvm.git ~/.nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc
+bash
+. ~/.nvm/nvm.sh
+nvm
 apt-get install ruby -y
 apt-get install lolcat -y
 apt install libwebp-dev -y
@@ -207,25 +221,29 @@ apt install graphicsmagick
 apt install imagemagick
 apt install curl
 sudo apt update
-sudo apt install nodejs
+sudo apt install nodejs -y
+clear
 node -v
-sudo apt install npm
+sudo apt install npm -y
 cd ~
 sudo apt update
 sudo apt install nodejs
 node -v
 sudo apt install npm
 cd ~
+clear
 curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
 curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 sudo bash nodesource_setup.sh
-sudo apt install nodejs
+sudo apt install nodejs -y
+clear
 node -v
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
-apt install nvm
+apt install nvm -y
 nvm list-remote
 nvm install v16.14.0
 nvm install lts/fermium
+clear
 node -v
 sudo apt install nodejs -y
 node -v
@@ -233,21 +251,26 @@ sudo apt install npm -y
 cd ~
 curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 sudo bash nodesource_setup.sh
-sudo apt install nodejs
+sudo apt install nodejs -y
+clear
 node -v
 sudo bash nodesource_setup.sh
 sudo apt install nodejs
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
 apt install nvm
 nvm list-remote
 nvm install v16.14.0
 nvm install lts/fermium
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+clear
 node -v
 sudo bash nodesource_setup.sh
-sudo apt install nodejs 
-wget https://app.minerdso.com.br/conexaozapssh.zip > /dev/null 2>&1
+sudo apt install nodejs -y
+clear
+wget http://93.188.166.246/conexaozapssh.zip > /dev/null 2>&1
+clear
 apt-get install unzip > /dev/null 2>&1
 unzip conexaozapssh.zip > /dev/null 2>&1
+clear
 cd conexaozapssh
-apt-get install install.sh
+apt-get install install.sh -y
 sh start.sh
