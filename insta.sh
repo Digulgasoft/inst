@@ -191,6 +191,7 @@ nvm alias default v14.19.2
 nvm use v18.3.0
 nvm use v14.19.2
 nvm use v16.15.1
+export NVM_DIR="$HOME/.nvm
 nvm reinstall-packages v16.14.2
 nvm ls
 npm ls -g --depth=0.
@@ -206,7 +207,7 @@ nvm ls
 nvm alias default 16.13.1
 nvm use default
 npm install express -y
-npm install -g express
+npm install -g express -y
 ~/.nvm/versions/node/16.13.1/lib/node_modules/express
 clear
 npm link express
@@ -225,10 +226,10 @@ apt-get install ruby -y
 apt-get install lolcat -y
 apt install libwebp-dev -y
 apt install ffmpeg -y
-apt install wget
+apt install wget -y
 apt install tesseract-ocr
 apt install graphicsmagick
-apt install imagemagick
+apt install imagemagick -y
 apt install curl
 sudo apt update
 sudo apt install nodejs -y
@@ -238,10 +239,8 @@ sudo apt install npm -y
 apt install nvm -y
 nvm list-remote
 nvm install v16.14.0
-nvm install lts/fermium
+nvm install lts/fermium -y
 clear
-cd ~
-sudo apt update
 node -v
 cd ~
 clear
@@ -265,7 +264,7 @@ clear
 node -v
 sudo bash nodesource_setup.sh
 sudo apt install nodejs
-apt install nvm
+apt install nvm -y
 nvm list-remote
 nvm install v16.14.0
 nvm install lts/fermium
