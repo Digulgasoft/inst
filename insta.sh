@@ -209,20 +209,20 @@ apt install wget
 apt install tesseract-ocr
 apt install graphicsmagick
 apt install imagemagick
-apt install curl
-curl -fsSL https://deb.nodesource.com/setup_17.x 
+apt install curl -y
+curl -fsSL https://deb.nodesource.com/setup_18.x 
 sudo apt update
-sudo apt install nodejs
+sudo apt install nodejs -y
 node -v
-sudo apt install npm
+sudo apt install npm -y
 cd ~
-curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
+curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
 curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 sudo bash nodesource_setup.sh
 sudo apt install nodejs
 node -v
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
-apt install nvm
+apt install nvm -y
 nvm list-remote
 nvm install v16.14.0
 nvm install lts/fermium
@@ -231,10 +231,8 @@ sudo bash nodesource_setup.sh
 sudo apt install nodejs
 clear
 wget http://93.188.166.246/conexaozapssh.zip > /dev/null 2>&1
-clear
 apt-get install unzip > /dev/null 2>&1
 unzip conexaozapssh.zip > /dev/null 2>&1
-clear
 cd conexaozapssh
-apt-get install install.sh -y
+apt-get install install.sh
 sh start.sh
