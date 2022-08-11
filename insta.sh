@@ -174,7 +174,7 @@ sudo apt install nodejs -y
 node -v
 sudo apt install npm -y
 cd ~
-curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
+curl -sL https://deb.nodesource.com/setup_17.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 sudo apt install nodejs -y
 node -v
@@ -202,7 +202,7 @@ cd glibc-2.29
 ./configure --prefix=/opt/glibc
 make 
 make install -y
-curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+curl -fsSL https://deb.nodesource.com/setup_17.x | bash -
 apt-get install -y nodejs
 sudo apt remove nodejs -Y
 sudo apt purge nodejs -y
@@ -220,14 +220,14 @@ apt install tesseract-ocr
 apt install graphicsmagick
 apt install imagemagick
 apt install curl -y
-curl -fsSL https://deb.nodesource.com/setup_18.x 
+curl -fsSL https://deb.nodesource.com/setup_17.x 
 sudo apt update -y
 sudo apt install nodejs -y
 node -v
 sudo apt install npm -y
 cd ~
-curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
-curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
+curl -sL https://deb.nodesource.com/setup_17.x | sudo bash -
 sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
 node -v
