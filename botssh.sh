@@ -180,7 +180,6 @@ echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━�
 sudo apt update
 sudo apt install npm
 cd ~
-curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 npm -v
 sudo apt install build-essential
